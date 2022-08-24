@@ -1,0 +1,162 @@
+* {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+}
+
+.anim-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #ffffff, #6cabea, #2adc5c);
+  background-size: 200% 200%;
+  -webkit-animation: color 20s ease-in-out infinite;
+          animation: color 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+main {
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.myGithub {
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+}
+
+.myGithub a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.myGithub p {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 0.2rem;
+  color: black;
+}
+
+.myGithub img {
+  width: 30px;
+}
+
+.calculator {
+  width: 16rem;
+  height: 23rem;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  grid-template-rows: 1.5fr 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+#screen {
+  grid-column: 1/5;
+  background-color: rgba(129, 251, 180, 0.579);
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  border-radius: 5px;
+}
+#screen .display-window {
+  width: 13rem;
+  height: 3rem;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#divide {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+#multiply {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+#substract {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+#add {
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+#equal {
+  grid-column: 4/5;
+  grid-row: 7/8;
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#equal:hover {
+  background: rgba(129, 251, 180, 0.579);
+}
+
+#backspace {
+  font-size: 1.3rem;
+}
+
+#zero {
+  grid-column: 2/3;
+}
+
+#clear {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  font-size: 1.8rem;
+}
+
+#sqrt {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  font-size: 1.6rem;
+}
+
+#power {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 1.6rem;
+}
+
+#backspace {
+  grid-column: 4/5;
+}/*# sourceMappingURL=style.css.map */
